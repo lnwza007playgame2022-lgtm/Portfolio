@@ -155,7 +155,7 @@
                 </div>
             </div>
 
-            <!-- Hero Image: ภาพอุปกรณ์กล้อง/สตูดิโอ (ไม่มีรูปคน) -->
+            <!-- Hero Image -->
             <div class="lg:col-span-5 h-[380px] sm:h-[420px] rounded-2xl overflow-hidden relative border border-zinc-200 bg-zinc-100">
                 <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop" 
                      alt="Camera Gear Studio Setup" 
@@ -188,10 +188,15 @@
         <!-- ABOUT & PHILOSOPHY -->
         <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div class="neo-card rounded-[28px] p-8 lg:col-span-5 flex flex-col items-center text-center justify-center bg-rose-50/40 border-rose-100">
-                <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4 relative">
-                    <!-- แก้ไขจุดนี้: เปลี่ยนชื่อไฟล์ให้ตรงกับบน GitHub (18585.jpg) -->
-                    <img src="18585.jpg" alt="Piyamon Wongsa" class="w-full h-full object-cover object-top">
+                
+                <!-- วงกลมโปรไฟล์ เพิ่ม onerror ป้องกันภาพพัง -->
+                <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4 relative bg-zinc-200 flex items-center justify-center shrink-0">
+                    <img src="./18585.jpg" 
+                         alt="Piyamon" 
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop';" 
+                         class="w-full h-full object-cover object-top">
                 </div>
+
                 <h3 class="font-heading font-bold text-2xl text-zinc-900 mb-1">Piyamon Wongsa</h3>
                 <p class="text-rose-600 text-sm font-medium mb-4">Student & Digital Content Creator</p>
                 <p class="text-zinc-600 text-sm leading-relaxed">
